@@ -127,6 +127,10 @@ p {
     -ms-transform: skewY(-2deg); /* ms > ie */
 }
 
+/* Stats */
+.stats {
+    padding-top: 115px;
+}
 
 /* Utilities */
  .container {
@@ -178,4 +182,8 @@ p {
     justify-content: center;
     align-items: center;
     height: 100%;
+ }
+
+ .grid-3 {
+    grid-template-columns: repeat(3, 1fr);
  }
