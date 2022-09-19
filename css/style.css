@@ -112,6 +112,21 @@ p {
     outline: none;
 }
 
+.showcase::before,
+.showcase::after {
+    content:'';
+    position: absolute;
+    height: 150px; /*original was 100px*/
+    bottom: -100px; /*original was -70px*/
+    right: 0;
+    left: 0;
+    background: #fff;
+    transform: skewY(-2deg); /*original was -2deg*/
+    -webkit-transform: skewY(-2deg); /* web > chrome/safari */
+    -moz-transform: skewY(-2deg); /* moz > firefox */
+    -ms-transform: skewY(-2deg); /* ms > ie */
+}
+
 
 /* Utilities */
  .container {
