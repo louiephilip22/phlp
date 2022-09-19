@@ -1,9 +1,12 @@
-/* Google font LAto imported */
-
+/* Google font Lato imported */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
-/* This is the base CSS */
+/* CSS Variables */
+:root {
+    --primary-color: #047aed;
+}
 
+/* This is the base CSS */
 * {
     box-sizing: border-box;
     padding: 0;
@@ -36,9 +39,8 @@ p {
 }
 
 /* Navigation bar */
-
  .navbar {
-    background-color: #047aed;
+    background-color: var(--primary-color);
     color: #fff;
     height: 70px;
  }
@@ -61,6 +63,28 @@ p {
     border-bottom: 2px #fff solid;
  }
 
+ /* Showcase */
+.showcase {
+    background-color: var(--primary-color);
+    height: 400px;
+    color: #fff;
+    position: relative;
+}
+
+.showcase h1 {
+    font-size: 40px;
+}
+
+.showcase p {
+    margin: 20px 0;
+}
+
+.showcase .grid {
+    grid-template-columns: 55% 40%; /* This should be 55% 45% */
+    gap: 30px;
+}
+
+/* Utilities */
  .container {
     max-width: 1100px;
     margin: 0 auto;
@@ -70,6 +94,15 @@ p {
 
  .flex {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+ }
+
+ .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
     justify-content: center;
     align-items: center;
     height: 100%;
