@@ -37,27 +37,36 @@
  /* Backgrounds and colored buttons */
  .bg-primary,
  .btn-primary {
-  background-color: var(--primary-color);
-  color: #fff;
+   background-color: var(--primary-color);
+   color: #fff;
  }
 
  .bg-secondary,
  .btn-secondary {
-  background-color: var(--secondary-color);
-  color: #fff;
+   background-color: var(--secondary-color);
+   color: #fff;
  }
 
  .bg-dark,
  .btn-dark {
-  background-color: var(--dark-color);
-  color: #fff;
+   background-color: var(--dark-color);
+   color: #fff;
  }
 
  .bg-light,
  .btn-light {
-  background-color: var(--light-color);
-  color: #333;
+   background-color: var(--light-color);
+   color: #333;
  }
+
+.bg-primary a,
+.btn-primary a,
+.bg-secondary a,
+.btn-secondary a,
+.bg-dark a,
+.btn-dark a {
+  color: #fff;
+}
 
  /* Text sizes */
  .lead {
